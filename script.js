@@ -1,0 +1,22 @@
+$(document).ready(function(){
+    $("#surname").hide();
+    $("#email").hide();
+    $("#pass").hide();
+    $("#repeat").hide();
+    $("#register").hide();
+    $("#name").click(function(){
+        $("#surname").show(250);
+        $("#surname").click(function(){
+            $("#email").show(250);
+            $("#email").click(function(){
+                $("#pass").show(250);
+                $("#pass").click(function(){
+                    $("#repeat").show(250);
+                    $("#repeat").click(function(){
+                        $("#register").show(250);
+                    });
+                });
+            });
+        });
+    });
+});
